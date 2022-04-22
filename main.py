@@ -2,7 +2,7 @@ import nltk
 
 
 def main():
-    text = input("Plese enter your problem: ")
+    text = input("Plese enter your goal: ")
     # TODO: Write some tests for the user text.
     
     input, output = input_output_extraction(text)
@@ -10,6 +10,12 @@ def main():
     nn_model = nn_generator(input, output)
 
     return nn_model
+
+def data_cleaner(data):
+    """
+    This function cleans and prepares the data automatically.
+    """
+    return
 
 
 def input_output_extraction(text):
@@ -31,5 +37,4 @@ def nn_generator(input, output):
 
 
 if __name__=="__main__":
-    return main()
-
+    main()
